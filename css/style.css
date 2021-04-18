@@ -4,12 +4,24 @@
     margin: 10px auto;
 }
 
+/* Util */
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
 /* Header */
 
 .header {
     width: 100%;
     height: 80px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .profile-img {
@@ -23,16 +35,58 @@
 
 .header-nav {
     display: flex;
+    width: 50%;
     align-items: center;
-    justify-content: space-around;
     font-size: 1.5rem;
-    flex-grow: 1;
+    margin-left: auto;
+    justify-content: space-around;
 }
 
-.nav-item a:hover {
-    color: red;
-    transition: 1s;
+.drop-down {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: url("../img/cloud.png") no-repeat;
+    background-size: cover;
 }
+
+
+.drop-down > .header-nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: -75px;
+    top: 70px;
+    width: 120px;
+    height: 150px;
+    background-color: aliceblue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.arrow {
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid aliceblue;
+    top: -20px;
+    right: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav-item:hover{
+    transition: 1s;
+    background: #f1f1f1;
+
+}
+
+
 
 /* Main */
 
@@ -46,27 +100,46 @@
 .card {
     width: 100%;
     height: 400px;
-    border: 1px solid black;
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    margin-bottom: 20px;
 }
 
-.card-img {
-    height: 70%;
+.card-content-container {
+    margin-top: 10px;
 }
 
 .card-title {
-    height: 10%;
+    margin-bottom: 12px;
 }
 
 .card-content {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    line-height: 1.2em;
-    height: 3.6em;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* 라인수 */
-    -webkit-box-orient: vertical;
+    font-size: 1.2rem;
+}
+
+
+/* Card IMG */
+
+.card-img.html {
+    height: 70%;
+    background: url("../img/html.png") no-repeat ;
+    background-size: 414px 254px;
+    border: 1px solid black;
+}
+
+.card-img.git {
+    height: 70%;
+    background: url("../img/git.png") no-repeat ;
+    background-size: 414px 254px;
+    border: 1px solid black;
+}
+
+
+.card-img.tool-box {
+    height: 70%;
+    background: url("../img/toolbox.png") no-repeat center;
+    background-size: contain;
+    border: 1px solid black;
 }
