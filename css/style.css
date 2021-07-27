@@ -1,3 +1,5 @@
+/* container  */
+
 html, body {
     overflow-x: hidden;
     height: 100vh;
@@ -15,7 +17,8 @@ html, body {
     margin-bottom: 10px;
 }
 
-.container {
+.container,
+.why-you-have-to-pick-me {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -95,6 +98,8 @@ html, body {
     font-size: 0.5rem;
     margin-right: 5px;
     margin-bottom: 4px;
+    display: inline-block;
+
 }
 
 .tag-list {
@@ -172,4 +177,40 @@ html, body {
     content: "▪";
     margin-right: 5px;
 
+}
+
+.intro-list {
+    margin-bottom: 3px;
+}
+
+.why-apply {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.appeal {
+    background-color: white;
+    width: 80vw;
+    height: 88vh;
+    padding: 5em 2em;
+}
+
+.paragraph {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    vertical-align: center;
+}
+
+.wrap {
+    display: inline-block;
+    color: red;
+    padding: 2px 6px;
+    background-color: rgba(0,0,0,0.04);
+}
+
+.bold {
+    font-weight: bold;
+    display: inline-block;
 }
