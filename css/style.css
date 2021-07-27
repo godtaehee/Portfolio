@@ -3,7 +3,16 @@ html, body {
     height: 100vh;
     width: 100vw;
     background-color: #e9e9e9;
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    z-index: 999;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.mb-sm {
+    margin-bottom: 10px;
 }
 
 .container {
@@ -12,6 +21,15 @@ html, body {
     justify-content: center;
     align-items: center;
     background-color: #e9e9e9;
+}
+
+.list:before {
+    content: '👉';
+    margin-right: 5px;
+}
+
+.list {
+    font-size: 0.9em;
 }
 
 .portfolio {
@@ -25,7 +43,12 @@ html, body {
     background-color: white;
     width: 80vw;
     height: 88vh;
+    padding-left: 2em;
+    padding-right: 2em;
+
+
 }
+
 .grid-item {
     background-color: red;
 }
@@ -43,8 +66,15 @@ html, body {
     padding-top: 20px;
 }
 
-.contact {
+.introduction {
+    margin-top: 5px;
+}
+
+.info {
     grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .main {
@@ -56,12 +86,6 @@ html, body {
     font-size: 2em;
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    height: 100%;
-}
 
 .tag {
     border: 2px solid black;
@@ -69,11 +93,24 @@ html, body {
     font-weight: bold;
     border-radius: 5px;
     font-size: 0.5rem;
+    margin-right: 5px;
+    margin-bottom: 4px;
 }
 
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20%;
+}
 .contact-nav,
 .interest-nav,
-.follow-nav{
+.follow-nav {
     font-weight: bold;
 }
 
@@ -82,7 +119,7 @@ html, body {
 }
 
 .link {
-    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .square {
@@ -112,6 +149,26 @@ html, body {
     display: flex;
 }
 
+.timeline-nav {
+    font-weight: bold;
+}
+
 .timeline-content {
     margin-bottom: 20px;
+}
+
+.period {
+    color: #BEBEBE;
+}
+
+.project-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.intro-list:before {
+
+    content: "▪";
+    margin-right: 5px;
+
 }
