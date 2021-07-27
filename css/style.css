@@ -39,6 +39,7 @@ html, body {
     grid-area: intro;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
 }
 
 .contact {
@@ -49,3 +50,75 @@ html, body {
     grid-area: main;
 }
 
+.name {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.tag {
+    border: 2px solid black;
+    padding: 3px 6px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 0.5rem;
+}
+
+.contact-nav,
+.interest-nav,
+.follow-nav{
+    font-weight: bold;
+}
+
+.github {
+    display: flex;
+}
+
+.link {
+    margin-right: 5px;
+}
+
+.main {
+}
+
+.square {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #d4d4d4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: black;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 10px;
+}
+
+.graph {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.line {
+    position: absolute;
+    width: 0.5px;
+    height: 100%;
+    background-color: #d4d4d4;
+    top: 5px;
+    left: 2px;
+    transform: translateX(-100%);
+}
+
+.timeline {
+    display: flex;
+    height: auto;
+
+}
